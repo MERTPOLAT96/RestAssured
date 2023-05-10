@@ -2,19 +2,11 @@ public class ToDo {
 
     int userId;
     int id;
+    String title;
+    Boolean completed;
 
     public int getUserId() {
         return userId;
-    }
-
-    @Override
-    public String toString() {
-        return "ToDo{" +
-                "userId=" + userId +
-                ", id=" + id +
-                ", title='" + title + '\'' +
-                ", completed=" + completed +
-                '}';
     }
 
     public void setUserId(int userId) {
@@ -45,10 +37,15 @@ public class ToDo {
         this.completed = completed;
     }
 
-    String title;
-    Boolean completed;
-
-
+    @Override
+    public String toString() {
+        return "ToDo{" +
+                "userId=" + userId +
+                ", id=" + id +
+                ", title='" + title + '\'' +
+                ", completed=" + completed +
+                '}';
+    }
 }
 
 
